@@ -28,6 +28,23 @@ body {
     padding: 10px 50px;
     color: #243264;
     transition: 0.5s;
+    /*animation*/
+    animation-duration: 0.5s;
+    animation-name: animate-slide;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+/*animation keyframes*/
+@keyframes animate-slide {
+    0% {
+      opacity: 0;
+      transform: translate(0, 20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
 }
 
 /* Pick Up */
