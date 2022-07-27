@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Rental</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="rental-container">
+            <h2>Search for a rental car</h2>
+            <div class="pickUp-container">
+                <label for="pick-up">Pick up location</label>
+                <input type="text" placeholder="City, airport, reigon, district...">
+            </div>
+            <div class="deliver-container">
+                <label class="container">Deliver the car somewhere else
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="pickUpDate-container">
+                <label for="pickUpDate">Date of pickup</label>
+                <input 
+                class="date"
+                type="date" 
+                name="date" 
+                id="pickUp-date"
+                >
+                <input 
+                class="time"
+                type="time" 
+                name="time" 
+                id="pickUp-time"
+                >
+            </div>
+            <div class="deliveryDate-container">
+                <label for="deliveryDate">Date of delivery</label>
+                <input 
+                class="date"
+                type="date" 
+                name="date" 
+                id="delivery-date"
+                >
+                <input 
+                class="time"
+                type="time" 
+                name="time" 
+                id="delivery-time"
+                >
+            </div>
+            <div class="age-container">
+                <label class="ageContainer">The driver's age between 30 and 65?
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="checklist-container">
+                <ul>
+                    <li>No credit card fees</li>
+                    <li>No change fees</li>
+                    <li>Price match guarantee</li>
+                </ul>
+            </div>
+            <button onClick="window.location.reload();">Submit</button>
+        </div>
+    </body>
+</html>
